@@ -14,6 +14,7 @@
 		51FB2BAA299E09C500EAF5F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB2BA9299E09C500EAF5F4 /* Assets.xcassets */; };
 		51FB2BAD299E09C500EAF5F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FB2BAB299E09C500EAF5F4 /* LaunchScreen.storyboard */; };
 		51FB2BB5299E176200EAF5F4 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FB2BB4299E176200EAF5F4 /* Notifications.swift */; };
+		51FB2BB7299E191000EAF5F4 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FB2BB6299E191000EAF5F4 /* favicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		51FB2BAC299E09C500EAF5F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FB2BAE299E09C500EAF5F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51FB2BB4299E176200EAF5F4 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		51FB2BB6299E191000EAF5F4 /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				51FB2BA9299E09C500EAF5F4 /* Assets.xcassets */,
 				51FB2BAB299E09C500EAF5F4 /* LaunchScreen.storyboard */,
 				51FB2BAE299E09C500EAF5F4 /* Info.plist */,
+				51FB2BB6299E191000EAF5F4 /* favicon.png */,
 			);
 			path = notifications;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FB2BB7299E191000EAF5F4 /* favicon.png in Resources */,
 				51FB2BAD299E09C500EAF5F4 /* LaunchScreen.storyboard in Resources */,
 				51FB2BAA299E09C500EAF5F4 /* Assets.xcassets in Resources */,
 				51FB2BA8299E09C300EAF5F4 /* Main.storyboard in Resources */,
