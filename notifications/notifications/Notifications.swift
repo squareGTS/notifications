@@ -45,6 +45,11 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         content.badge = 1
         content.categoryIdentifier = userActions
         
+        content.threadIdentifier = notifaicationType
+        
+        content.summaryArgument = notifaicationType
+        content.summaryArgumentCount = 10
+        
         /*
         guard let path = Bundle.main.path(forResource: "favicon", ofType: "png") else { return }
         
@@ -62,9 +67,11 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         }
  */
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
-        let identifire = "Local Notification"
+        let identifire = UUID().uuidString
+        
+       // let identifire = "Local Notification"
         let request = UNNotificationRequest(identifier: identifire,
                                             content: content,
                                             trigger: trigger)
