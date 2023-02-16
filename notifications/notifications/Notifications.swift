@@ -13,7 +13,7 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
     let notificationCenter = UNUserNotificationCenter.current()
     
     func requestAutorization() {
-        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+        notificationCenter.requestAuthorization(options: [.alert, .sound, .badge, .providesAppNotificationSettings]) { (granted, error) in
             print("Permission granted: \(granted)")
             
             guard granted else { return }
@@ -130,6 +130,11 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         }
         
         completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.openSettings()
     }
 
 }

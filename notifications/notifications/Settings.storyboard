@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Vtu-g6-hg5">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="wMG-PX-Bs5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPg-0H-69C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уведомления об акциях" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I8-KX-jBs">
+                                <rect key="frame" x="16" y="120" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уведомления о скидках" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puB-97-K0l">
+                                <rect key="frame" x="16" y="173" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новости" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u71-8X-WUD">
+                                <rect key="frame" x="16" y="226" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8z-9d-L4H" userLabel="1 Switch">
+                                <rect key="frame" x="328" y="115" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQi-q9-jFs" userLabel="2 Switch">
+                                <rect key="frame" x="328" y="168" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка уведомлений" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6E-Bx-A5s">
+                                <rect key="frame" x="97.666666666666686" y="67" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-0Y-AcP" userLabel="3 Switch">
+                                <rect key="frame" x="328" y="221" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R7O-5a-1lX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O8z-9d-L4H" firstAttribute="centerY" secondItem="1I8-KX-jBs" secondAttribute="centerY" id="594-M6-gT2"/>
+                            <constraint firstItem="puB-97-K0l" firstAttribute="leading" secondItem="R7O-5a-1lX" secondAttribute="leading" constant="16" id="7V4-Zg-GqJ"/>
+                            <constraint firstItem="R7O-5a-1lX" firstAttribute="trailing" secondItem="O8z-9d-L4H" secondAttribute="trailing" constant="16" id="7Xb-64-ccX"/>
+                            <constraint firstItem="u71-8X-WUD" firstAttribute="top" secondItem="puB-97-K0l" secondAttribute="bottom" constant="32" id="AQw-L7-x8S"/>
+                            <constraint firstItem="u71-8X-WUD" firstAttribute="leading" secondItem="R7O-5a-1lX" secondAttribute="leading" constant="16" id="HMk-FF-vyh"/>
+                            <constraint firstItem="R7O-5a-1lX" firstAttribute="trailing" secondItem="BQi-q9-jFs" secondAttribute="trailing" constant="16" id="LVs-LD-SHI"/>
+                            <constraint firstItem="1I8-KX-jBs" firstAttribute="top" secondItem="V6E-Bx-A5s" secondAttribute="bottom" constant="32" id="OaA-Gw-5nY"/>
+                            <constraint firstItem="V6E-Bx-A5s" firstAttribute="centerX" secondItem="NPg-0H-69C" secondAttribute="centerX" id="TSr-40-IVt"/>
+                            <constraint firstItem="hdO-0Y-AcP" firstAttribute="centerY" secondItem="u71-8X-WUD" secondAttribute="centerY" id="j7a-8W-UsO"/>
+                            <constraint firstItem="1I8-KX-jBs" firstAttribute="leading" secondItem="R7O-5a-1lX" secondAttribute="leading" constant="16" id="jdI-d9-FYJ"/>
+                            <constraint firstItem="puB-97-K0l" firstAttribute="top" secondItem="1I8-KX-jBs" secondAttribute="bottom" constant="32" id="vVE-le-Qm9"/>
+                            <constraint firstItem="BQi-q9-jFs" firstAttribute="centerY" secondItem="puB-97-K0l" secondAttribute="centerY" id="vcM-Bc-XDJ"/>
+                            <constraint firstItem="R7O-5a-1lX" firstAttribute="trailing" secondItem="hdO-0Y-AcP" secondAttribute="trailing" constant="16" id="wpc-Oq-txb"/>
+                            <constraint firstItem="V6E-Bx-A5s" firstAttribute="top" secondItem="R7O-5a-1lX" secondAttribute="top" constant="8" id="zoh-RD-NYL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1Y-Wq-giI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+</document>
