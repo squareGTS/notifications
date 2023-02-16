@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="NotificationContent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golf.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4R8-76-aE1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-iM-rkm">
+                                <rect key="frame" x="0.0" y="250" width="320" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdE-Pp-A0O">
+                                        <rect key="frame" x="270" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ObP-qA-f53"/>
+                                            <constraint firstAttribute="height" constant="50" id="UQN-sf-lvu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="❤️"/>
+                                        <connections>
+                                            <action selector="likeButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="rTp-J7-6SM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                        <rect key="frame" x="18" y="0.0" width="244" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="244" id="B1n-Ht-56d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" id="91u-ep-WI2"/>
+                                    <constraint firstAttribute="trailing" secondItem="bdE-Pp-A0O" secondAttribute="trailing" id="M7E-Wv-fxr"/>
+                                    <constraint firstAttribute="bottom" secondItem="bdE-Pp-A0O" secondAttribute="bottom" id="S0x-Fu-syV"/>
+                                    <constraint firstAttribute="height" constant="50" id="aCv-bt-2Ww"/>
+                                    <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Glc-iM-rkm" secondAttribute="top" id="gVg-as-G6a"/>
+                                    <constraint firstItem="bdE-Pp-A0O" firstAttribute="leading" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="8" id="hVF-qs-QIQ"/>
+                                    <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="Glc-iM-rkm" secondAttribute="leading" constant="18" id="udg-NJ-epx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcA-LR-7mB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="openAppButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="MeP-mB-PEK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4R8-76-aE1" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="1hS-9d-JlJ"/>
+                            <constraint firstItem="4R8-76-aE1" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="KMa-X6-JAr"/>
+                            <constraint firstItem="4R8-76-aE1" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="M2o-BB-J3P"/>
+                            <constraint firstItem="LcA-LR-7mB" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="Q9i-9U-BcO"/>
+                            <constraint firstItem="Glc-iM-rkm" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="VgX-9R-SjL"/>
+                            <constraint firstItem="LcA-LR-7mB" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="WX3-7o-M2r"/>
+                            <constraint firstItem="Glc-iM-rkm" firstAttribute="top" secondItem="4R8-76-aE1" secondAttribute="bottom" id="YmZ-j6-nVJ"/>
+                            <constraint firstItem="Glc-iM-rkm" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="jNZ-0c-gym"/>
+                            <constraint firstItem="Glc-iM-rkm" firstAttribute="top" secondItem="LcA-LR-7mB" secondAttribute="bottom" id="pmW-ve-zIz"/>
+                            <constraint firstItem="Glc-iM-rkm" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="qxx-3n-DMP"/>
+                            <constraint firstItem="LcA-LR-7mB" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="uKk-bD-e79"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="label" destination="GcN-lo-r42" id="lpW-cU-7IG"/>
+                        <outlet property="likeButton" destination="bdE-Pp-A0O" id="GyT-yH-6al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.93129770992365" y="-2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="golf.jpg" width="115.19999694824219" height="108"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
