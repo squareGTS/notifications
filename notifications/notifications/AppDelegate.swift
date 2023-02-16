@@ -16,12 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let notifications = Notifications()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            notifications.requestAutorization()
-            notifications.notificationCenter.delegate = notifications
+        notifications.requestAutorization()
+        notifications.notificationCenter.delegate = notifications
+        
+        notifications.requestAutorization()
+        notifications.notificationCenter.delegate = notifications
         
         FirebaseApp.configure()
-            return true
-        }
+        
+        notifications.messagingDeleget.delegate = notifications
+        
+        return true
+    }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         UIApplication.shared.applicationIconBadgeNumber = 0
@@ -42,5 +48,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("Failed to register: \(error)")
     }
-
+    
 }
